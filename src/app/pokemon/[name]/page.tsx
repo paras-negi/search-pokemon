@@ -1,6 +1,5 @@
 import { PokemonDetails } from "@/app/types";
 import Link from "next/link";
-// import Breadcrumb from "@/app/components/BreadCrumbs";
 
 async function getPokemonDetails(name: string): Promise<PokemonDetails> {
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
@@ -32,7 +31,6 @@ export default async function PokemonDetail({ params }: { params: { name: string
             </div>
           </div>
 
-          {/* Right side - Details */}
           <div className="bg-[#fec668] p-8 ">
             <div className="space-y-4">
               <div>
